@@ -13,7 +13,7 @@ public class MinimumDistanceBetweenTwoNumbers {
             for(int j=i+1; j<n; j++) {
                 if((x == arr[i] && y == arr[j]) ||
                         (y == arr[i] && x == arr[j]) &&
-                                minDist < Math.abs(i-j)) {
+                                minDist > Math.abs(i-j)) {
                     minDist = Math.abs(i-j);
                 }
             }
